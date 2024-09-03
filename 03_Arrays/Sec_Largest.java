@@ -6,10 +6,9 @@ public class Sec_Largest {
             if (num[i] > max) {
                 smax = max;
                 max = num[i];
-            } else {
-                if (num[i] < max && num[i] > smax)
-                    smax = num[i];
-            }
+            } else if (num[i] < max && num[i] > smax)
+                smax = num[i];
+
         }
         return smax;
     }
