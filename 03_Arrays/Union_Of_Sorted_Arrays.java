@@ -21,6 +21,20 @@ public class Union_Of_Sorted_Arrays {
             }
 
         }
+        while (i < arr1.length) {
+            if (temp.isEmpty() || temp.get(temp.size() - 1) != arr1[i]) {
+                temp.add(arr1[i]);
+
+            }
+            i++;
+        }
+        while (j < arr2.length) {
+            if (temp.isEmpty() || temp.get(temp.size() - 1) != arr2[j]) {
+                temp.add(arr2[j]);
+
+            }
+            j++;
+        }
         return temp;
     }
 
