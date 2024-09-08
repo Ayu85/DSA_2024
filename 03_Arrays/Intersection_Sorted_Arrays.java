@@ -13,7 +13,10 @@ public class Intersection_Sorted_Arrays {
             else if (arr2[j] < arr1[i])
                 j++;
             else {
-                temp.add(arr1[i]);
+                if (temp.isEmpty() || temp.get(temp.size() - 1) != arr1[i]) {
+                    temp.add(arr1[i]);
+
+                }
                 i++;
                 j++;
             }
