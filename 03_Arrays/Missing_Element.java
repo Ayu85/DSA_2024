@@ -12,7 +12,16 @@ public class Missing_Element {
         return totalSum - sum;
     }
 
+    static int getMissingOptimal(int[] arr, int n) {
+        int totalSum = (n * (n + 1)) / 2;
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++)
+            sum += arr[i];
+
+        return totalSum - sum;
+    }
+
     public static void main(String[] args) {
-        System.out.println(getMissing(new int[] { 1, 2, 3, 4 }, 5));
+        System.out.println(getMissingOptimal(new int[] { 1, 2, 3, 4 }, 5));
     }
 }
