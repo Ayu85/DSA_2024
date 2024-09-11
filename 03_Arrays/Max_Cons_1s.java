@@ -14,6 +14,6 @@ public class Max_Cons_1s {
         return maxc;
     }
     public static void main(String[] args) {
-        System.out.println(getMaxCount(new int[] {1,1,1,0,1,1,0,1,1}, 9));
+        System.out.println(getMaxCount(new int[] {1,1,0,1,1,0,1,1,1}, 9));
     }
 }
