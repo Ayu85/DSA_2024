@@ -15,7 +15,7 @@ public class Generate_Subarrays {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 1, 1, 1, 1, 4, 2, 3 };
+        int[] arr = { 100, 200, 300, 400};
         int maxl = 0;
         int givenSum = 3;
         for (int i = 0; i < arr.length; i++) {
@@ -33,6 +33,6 @@ public class Generate_Subarrays {
             }
         }
         // System.out.println("Answer-" + maxl);
-        System.out.println(better(arr, 3));
+        System.out.println(better(arr, 700));
     }
 }
